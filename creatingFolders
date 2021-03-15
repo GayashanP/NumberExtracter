@@ -1,0 +1,27 @@
+!mkdir Mobitel
+!cd Mobitel
+!mkdir 070
+!mkdir 071
+!cd ..
+
+!mkdir Dialog
+!cd Dialog
+!mkdir 077
+!mkdir 076
+!mkdir 074
+!cd ..
+
+!mkdir Hutch
+!cd Hutch
+!mkdir 078
+!cd ..
+
+!mkdir Etisalat
+!cd Etisalat
+!mkdir 072
+!cd ..
+
+!mkdir Airtel
+!cd Airtel
+!mkdir 075
+!cd ..

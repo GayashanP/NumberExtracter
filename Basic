@@ -1,0 +1,35 @@
+import java.io.FileWriter;
+import java.io.IOException;
+public class NumberExtract{
+    static FileWriter f;
+    public static void main(String[] args) {
+        int i = 1000;
+        while(true){
+            if(i==9000) break;
+            try {
+                f = new FileWriter("C:\\Users\\pgpcg\\Desktop\\java\\"+String.valueOf(i)+"-"+String.valueOf(i+1000)+".vcf");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            for (int j = i; j < i+1000 ; j++) {
+                writer(j,String.valueOf(j));
+            }
+            i+=1000;
+            try {
+                f.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+    }
+
+    static void writer(int number,String name){
+        String a = "BEGIN:VCARD\nN:;070123"+name+";;;\nFN:"+name+"\nTEL;CELL:+9470123"+number+"\nEND:VCARD\n";
+        try {
+            f.write(a);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
